@@ -1,3 +1,15 @@
+# /dev/crash (with write support)
+
+This repo contains the source code of the memory driver of the
+crash utility. The only difference with the mainline repo is
+that I've implemented writing to kernel memory through the driver,
+in a similar fashion that you can read from kernel memory.
+
+The original repo of the crash utility (including the memory driver)
+can be found here: https://github.com/crash-utility/crash
+
+== ORIGINAL README FILE KEPT BELOW ==
+
 For live system analysis, the physical memory source must be one
 of the following devices:
 
