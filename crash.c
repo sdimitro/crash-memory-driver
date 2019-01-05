@@ -138,7 +138,7 @@ static inline void unmap_virtual(struct page *page)
 #endif
 
 
-#define CRASH_VERSION   "1.3"
+#define CRASH_VERSION   "1.4"
 
 /*
  *  These are the file operation functions that allow crash utility
