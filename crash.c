@@ -186,10 +186,10 @@ crash_write(struct file *file, const char *buf, size_t count, loff_t *poff)
 		return -EFAULT;
 	}
 
-        if (probe_kernel_write(vaddr, buffer, count)) {
-                unmap_virtual(page);
-                return -EFAULT;
-        }
+	if (probe_kernel_write(vaddr, buffer, count)) {
+		unmap_virtual(page);
+		return -EFAULT;
+	}
 	unmap_virtual(page);
 
 	written = count;
