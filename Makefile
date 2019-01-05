@@ -11,5 +11,8 @@
 obj-m := crash.o
 all:
 	make -C /lib/modules/`uname -r`/build SUBDIRS=${PWD} modules
+
+checkstyle:
+	./checkpatch.pl --terse --file --no-tree crash.c
 clean:
 	rm -f *.mod.c *.ko *.o Module.*
