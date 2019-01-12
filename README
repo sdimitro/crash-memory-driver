@@ -1,5 +1,8 @@
 # /dev/crash (with write support)
 
+UPDATE: As of 7 Jan 2019 the changes from this repo have made it
+to the mainline code. This repo is now deprecated.
+
 This repo contains the source code of the memory driver of the
 crash utility. The only difference with the mainline repo is
 that I've implemented writing to kernel memory through the driver,
